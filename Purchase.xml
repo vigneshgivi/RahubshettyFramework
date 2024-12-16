@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite">
+<!--parallel="tests"-->
+<!--for commenting the line we just highlight and ctrl+shift+c-->
+<groups>
+<run>
+
+<!--<include name="Purchase"></include>-->
+
+
+</run>
+
+
+</groups>
+
+<listeners>
+<listener class-name="rahulshettyacademy.TestComponents.Listeners"/>
+</listeners>
+
+  <test thread-count="5" name="Submit Order Test">
+    <classes>
+      <class name="rahulshettyacademy.tests.SubmitOrderTest1"/>
+      
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="Error Validations Test">
+    <classes>
+     
+      <class name="rahulshettyacademy.tests.ErrorValidationsTest1"/>
+    </classes>
+  </test> <!-- Test -->
+  
+    
+</suite> <!-- Suite -->
